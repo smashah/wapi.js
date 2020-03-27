@@ -1,0 +1,24 @@
+{
+  "name": "wapijs",
+  "version": "0.0.1",
+  "description": "A centralized source for the latest functioning wapi.js file for easy use in your whatsapp project.",
+  "main": "wapi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smashah/wapi.js.git"
+  },
+  "keywords": [
+    "chatbot",
+    "whatsapp",
+    "puppeteer"
+  ],
+  "author": "SMASHAH <shah@idk.uno> (smashah.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smashah/wapi.js/issues"
+  },
+  "homepage": "https://github.com/smashah/wapi.js#readme"
+}
