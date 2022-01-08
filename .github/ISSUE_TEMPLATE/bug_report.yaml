@@ -3,6 +3,7 @@ description: Create a report to help us improve
 labels: [Bug, Needs Triage]
 body:
 - type: checkboxes
+  id: latest
   attributes:
     label: Are you using the latest version of the library
     description: This is not like most libraries where older versions can remain functioning forever. Sometimes major updates from WA result in a new version of this library being released which then becomes essentially the minimum working version.
@@ -10,6 +11,7 @@ body:
     - label: I have checked and am using the latest version of the library.
       required: true
 - type: dropdown
+  id: session_type
   attributes:
     label: What type of session are you experiencing this issue on?
     description: Multi-device beta allows you to use your WA Web session without the host device being connected to the internet.
@@ -19,6 +21,7 @@ body:
       - "Legacy (Normal)"
       - "Tested and experienced on both"
 - type: dropdown
+  id: acc_type
   attributes:
     label: What type of host account are you experiencing this issue on?
     description: Business and personal accounts are very different and can give a clue to resolve issues quickly.
@@ -30,18 +33,21 @@ body:
   validations:
     required: true
 - type: textarea
+  id: curr_behaviour
   attributes:
     label: Current Behavior
     description: A concise description of what you're experiencing.
   validations:
     required: false
 - type: textarea
+  id: exp_behaviour
   attributes:
     label: Expected Behavior
     description: A concise description of what you expected to happen.
   validations:
     required: false
 - type: textarea
+  id: repro
   attributes:
     label: Steps To Reproduce
     description: Steps to reproduce the behavior.
@@ -53,6 +59,7 @@ body:
   validations:
     required: false
 - type: dropdown
+  id: mode
   attributes:
     label: Mode
     description: How are you using the library while experiencing this bug?
@@ -63,6 +70,7 @@ body:
   validations:
     required: true
 - type: textarea
+  id: c_code
   attributes:
     label: create() code
     description: |
@@ -75,6 +83,7 @@ body:
     required: false
     
 - type: textarea
+  id: debug
   attributes:
     label: DEBUG INFO?
     description: |
@@ -92,6 +101,7 @@ body:
     required: false
     
 - type: textarea
+  id: enviro
   attributes:
     label: Environment
     description: |
@@ -108,6 +118,7 @@ body:
     required: false
     
 - type: textarea
+  id: screenshots
   attributes:
     label: Screenshots/Logs
     description: |
