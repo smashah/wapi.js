@@ -4,7 +4,7 @@ labels: [Bug, Needs Triage]
 body:
 - type: checkboxes
   attributes:
-    label: Are you using the latest version of the library?
+    label: Are you using the latest version of the library
     description: This is not like most libraries where older versions can remain functioning forever. Sometimes major updates from WA result in a new version of this library being released which then becomes essentially the minimum working version.
     options:
     - label: I have checked and am using the latest version of the library.
@@ -76,7 +76,7 @@ body:
     
 - type: textarea
   attributes:
-    label: DEBUG INFO
+    label: DEBUG INFO?
     description: |
       This is the info printed to the console when you start your app. It should look like this:
       ```
